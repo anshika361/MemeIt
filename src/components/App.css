@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: black;
+}
+.header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90deg, #3e432e 1.18%, #616f39 100%);
+  padding: 20px;
+  color: aliceblue;
+  width: 100%;
+}
+
+.trollimg {
+  height: 100%;
+  margin-right: 6px;
+}
+
+.troll_name {
+  font-family: Karla;
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+main {
+  padding: 35px;
+  margin: 20px;
+}
+
+.form {
+  display: grid;
+  grid-template: 40px 40px/ 1fr 1fr;
+  gap: 15px;
+}
+
+.input-text {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+  text-indent: 6px;
+  color: #2b2f1f;
+  font-weight: 550;
+  transition: 0.1s ease-in-out;
+}
+
+.input-text:focus {
+  outline: none;
+  border: 3px solid #a2c538;
+  border-spacing: 20px;
+}
+
+.form-button,
+.download-button {
+  grid-column: 1/-1;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  border-radius: 8px;
+  border-style: none;
+  background: linear-gradient(90.41deg, #9cc71c 1.14%, #a2c538 100%);
+  color: #2b2f1f;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.form-button:hover,
+.download-button:hover {
+  background: linear-gradient(90.41deg, #38411b 1.14%, #505933 100%);
+  color: #9cc71c;
+}
+
+::placeholder {
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+  padding: 5px;
+}
+
+.download-button {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  display: block;
+}
+.meme {
+  position: relative;
+}
+
+.meme--image {
+  max-width: 100%;
+  border-radius: 3px;
+  position: relative;
+  margin: 10px;
+  align-items: center;
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  left: 50%;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.top {
+  top: 0;
+}
